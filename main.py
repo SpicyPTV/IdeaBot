@@ -1,6 +1,7 @@
 import os
 import discord
 from discord.ext import commands
+from numpy import random
 
 client = commands.Bot(command_prefix="!")
 token = os.environ['token']
@@ -15,6 +16,12 @@ async def on_ready():
 @client.command()
 async def hello(ctx):
     await ctx.send("Hello, I am your bot!")
+
+
+@client.command()
+async def idea(ctx):
+  rand = random.randint(7)
+  await ctx.send(ideas[rand])
 
 
 client.run(token)
