@@ -10,7 +10,10 @@ ideas = [
     'Run a competition', 'Add new emotes', 'Invite new people to the server',
     'Hop on voice chat', 'Share a project you\'re working on',
     'Start a new project', 'Set out a roadmap for your current project',
-    'Setup a server wide competition'
+    'Setup a server wide competition', 'Advertise your discord channel',
+    'Send out a call for new mods',
+    'Make sure the currrent mod team are doing their job',
+    'Make sure everyone is following your server rules', 'Be a good leader'
 ]
 
 # Makes sure the bot loads
