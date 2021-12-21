@@ -16,16 +16,16 @@ ideas = [
     'Make sure everyone is following your server rules', 'Be a good leader',
     'Create a meme', 'Post your favourite meme', 'Prank someone',
     'Make a new friend', 'Message an old friend', 'Tell someone you love them',
-    'Message your crush'
+    'Message your crush', 'Make a schedule for your week', 'Create a meal plan'
 ]
+length = len(ideas)
 
 # Makes sure the bot loads
 
 
 @client.event
 async def on_ready():
-    print("ready")
-    length = len(ideas)
+    print("loaded")
     print(length)  # Debug
 
 
