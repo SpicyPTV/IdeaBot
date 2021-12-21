@@ -13,7 +13,10 @@ ideas = [
     'Setup a server wide competition', 'Advertise your discord channel',
     'Send out a call for new mods',
     'Make sure the currrent mod team are doing their job',
-    'Make sure everyone is following your server rules', 'Be a good leader'
+    'Make sure everyone is following your server rules', 'Be a good leader',
+    'Create a meme', 'Post your favourite meme', 'Prank someone',
+    'Make a new friend', 'Message an old friend', 'Tell someone you love them',
+    'Message your crush'
 ]
 
 # Makes sure the bot loads
@@ -22,7 +25,8 @@ ideas = [
 @client.event
 async def on_ready():
     print("ready")
-    print(len(ideas))  # Debug
+    length = len(ideas)
+    print(length)  # Debug
 
 
 # Basic intro to the Bot's commands
@@ -40,7 +44,7 @@ async def hello(ctx):
 
 @client.command()
 async def idea(ctx):
-    rand = random.randint(11)
+    rand = random.randint(length)
     await ctx.send(ideas[rand])
 
 
