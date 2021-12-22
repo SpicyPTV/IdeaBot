@@ -16,7 +16,7 @@ ideas = [
     'Make sure everyone is following your server rules', 'Be a good leader',
     'Create a meme', 'Post your favourite meme', 'Prank someone',
     'Make a new friend', 'Message an old friend', 'Tell someone you love them',
-    'Message your crush', 'Make a schedule for your week', 'Create a meal plan'
+    'Message your crush', 'Make a schedule for your week', 'Create a meal plan', 'Play a video game'
 ]
 length = len(ideas)
 
