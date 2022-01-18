@@ -22,15 +22,12 @@ length = len(ideas)
 
 # Makes sure the bot loads
 
-
 @client.event
 async def on_ready():
     print("loaded")
     print(length)  # Debug
 
-
 # Basic intro to the Bot's commands
-
 
 @client.command()
 async def hello(ctx):
@@ -38,15 +35,12 @@ async def hello(ctx):
         "Idea Bot is ready and waiting, just type !idea for an idea in one of your text channels!"
     )
 
-
 # Command that prints the idea
-
 
 @client.command()
 async def idea(ctx):
     rand = random.randint(length)
     await ctx.send(ideas[rand])
-
 
 # Authorizes and runs the bot
 
